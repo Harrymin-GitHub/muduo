@@ -1,3 +1,38 @@
+Muduo是一个基于反应器模式的多线程C++网络库。
+
+GitHub链接
+
+版权所有 © 2010，陈硕。保留所有权利。
+
+本源代码的使用受BSD样式许可协议约束，详细条款可参见License文件。
+
+系统需求：
+
+Linux内核版本≥2.6.28。
+GCC≥4.7 或者 Clang≥3.5。
+Boost（仅用于boost::any部分。）
+已测试环境：
+
+Debian 7及其以上版本。
+Ubuntu 14.04及其以上版本。
+CentOS 7及其以上版本。
+安装依赖包：
+
+Debian, Ubuntu等：
+$ sudo apt install g++ cmake make libboost-dev
+
+CentOS：
+$ sudo yum install gcc-c++ cmake make boost-devel
+
+更多的示例构建所需额外包请参考.travis.yml文件。
+
+构建项目，运行：
+./build.sh
+
+关于如何在您的项目中使用muduo，请访问教程。
+
+
+
 Muduo is a multithreaded C++ network library based on
 the reactor pattern.
 
